@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  
+</head>
+<body>
+  <form >
+ <p>吸い始めた年齢
+  <input type="number" class="box" name="age">
+ </p>
+ <p>1日あたりの本数
+  <input type="number" class="box" name="smoke">
+ </p>
+ <p>現在の年齢
+  <input type="number" class="box" name="now_age">
+ </p>
+ 
+
+ <p><input type="button" class="calc-btn" onclick="calc(age.value, smoke.value,now_age.value);" value="計算"></p>
+</form>
+
+  <p>吸った本数
+    <input id="smokes" class="box" type="text" readonly="">本
+  </p>
+
+<p>削った寿命
+  <input id="lows" class="box" type="text" readonly="">日
+</p>
+
+<p>使った金額
+  <input id="moneys" class="box" type="text" readonly="">円
+</p>
+
+<script src="index.js"></script>
+</body>
+</html>
